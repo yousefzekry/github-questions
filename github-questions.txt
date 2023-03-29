@@ -37,7 +37,9 @@ commits before integrating them with your local repository.
 
 
 5. What is a git merge conflict and how does it happen? How to resolve it?
-- first we need to have two branches
+- first we need to have two branches 
+- Now we are working on 'mynewBranch' 
+- we pushed the updates to the new branch  
 
 6. What is the head, working tree, and index?
 7. Explain these commands one by one – git status, git log, git diff, git revert <commit>, git reset <file>?
