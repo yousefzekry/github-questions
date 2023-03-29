@@ -35,6 +35,9 @@ commits before integrating them with your local repository.
 
 
 5. What is a git merge conflict and how does it happen? How to resolve it?
+- trying to write random words on the same line to get merge conflict 
+when trying to merge the main with myNewBranch
+
 6. What is the head, working tree, and index?
 7. Explain these commands one by one – git status, git log, git diff, git revert <commit>, git reset <file>?
 8. What is git clone?
