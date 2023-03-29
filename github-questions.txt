@@ -1,0 +1,17 @@
+Basic Git Questions:
+
+1. What is a git repository?
+2. What is "git init", "git commit", "Git add"?
+3. What does git push commands do?
+4. What's the difference between git fetch and git pull?
+5. What is a git merge conflict and how does it happen? How to resolve it?
+6. What is the head, working tree, and index?
+7. Explain these commands one by one – git status, git log, git diff, git revert <commit>, git reset <file>?
+8. What is git clone?
+9. What is git stash?
+10. What is git reset and mention different ways to use it and what each way does?
+11. What does the git squash do?
+12. What does git merge do in basic steps of commands?
+13. What does git annotate command do?
+14. What is a pull request?
+15. What is git cherry-pick?
