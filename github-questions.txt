@@ -6,7 +6,10 @@ Basic Git Questions:
 -Repository in Git is a place where Git stores all the files. Git can store the files either
 on the local repository or on the remote repository.
 
+
+
 2. What is "git init", "git commit", "Git add"?
+
 - Git init is used to initialize a new git repository
 - Git commit saves changes in our local repository
 - " Git add " command is used to add files to git to be watched for changes 
@@ -14,10 +17,23 @@ on the local repository or on the remote repository.
 we may use "git add ." command to add all files in the file path we are using
 or we can use "git add <filename>" 
 
+
+
 3. What does git push commands do?
+
+-The git push command is used to upload local 
+repository content to a remote repository.
 
 
 4. What's the difference between git fetch and git pull?
+
+-The git fetch command downloads commits, files,
+and refs from a remote repository into your local repo. 
+Fetching is what you do when you want to see what everybody 
+else has been working on. ... This makes fetching a safe way to review
+commits before integrating them with your local repository.
+
+
 5. What is a git merge conflict and how does it happen? How to resolve it?
 6. What is the head, working tree, and index?
 7. Explain these commands one by one – git status, git log, git diff, git revert <commit>, git reset <file>?
