@@ -1,6 +1,11 @@
 Basic Git Questions:
 
 1. What is a git repository?
+-Git is a version control system used in software development to track changes in any software files.
+
+-Repository in Git is a place where Git stores all the files. Git can store the files either
+on the local repository or on the remote repository.
+
 2. What is "git init", "git commit", "Git add"?
 3. What does git push commands do?
 4. What's the difference between git fetch and git pull?
