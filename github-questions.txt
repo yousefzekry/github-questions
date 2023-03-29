@@ -10,6 +10,7 @@ on the local repository or on the remote repository.
 - Git init is used to initialize a new git repository
 - Git commit saves changes in our local repository
 - " Git add " command is used to add files to git to be watched for changes 
+-The git add command adds a change in the working directory to the staging area.
 we may use "git add ." command to add all files in the file path we are using
 or we can use "git add <filename>" 
 
