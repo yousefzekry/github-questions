@@ -30,11 +30,15 @@ repository content to a remote repository.
 -The git fetch command downloads commits, files,
 and refs from a remote repository into your local repo. 
 Fetching is what you do when you want to see what everybody 
-else has been working on. ... This makes fetching a safe way to review
+else has been working on. 
+
+This makes fetching a safe way to review
 commits before integrating them with your local repository.
 
 
 5. What is a git merge conflict and how does it happen? How to resolve it?
+- first we need to have two branches
+
 6. What is the head, working tree, and index?
 7. Explain these commands one by one – git status, git log, git diff, git revert <commit>, git reset <file>?
 8. What is git clone?
