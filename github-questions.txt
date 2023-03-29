@@ -7,7 +7,15 @@ Basic Git Questions:
 on the local repository or on the remote repository.
 
 2. What is "git init", "git commit", "Git add"?
+- Git init is used to initialize a new git repository
+- Git commit saves changes in our local repository
+- " Git add " command is used to add files to git to be watched for changes 
+we may use "git add ." command to add all files in the file path we are using
+or we can use "git add <filename>" 
+
 3. What does git push commands do?
+
+
 4. What's the difference between git fetch and git pull?
 5. What is a git merge conflict and how does it happen? How to resolve it?
 6. What is the head, working tree, and index?
