@@ -1,58 +1,195 @@
 Basic Git Questions:
 
 1. What is a git repository?
--Git is a version control system used in software development to track changes in any software files.
+    -
 
--Repository in Git is a place where Git stores all the files. Git can store the files either
-on the local repository or on the remote repository.
-
-
-
-2. What is "git init", "git commit", "Git add"?
-
-- Git init is used to initialize a new git repository
-- Git commit saves changes in our local repository
-- " Git add " command is used to add files to git to be watched for changes 
--The git add command adds a change in the working directory to the staging area.
-we may use "git add ." command to add all files in the file path we are using
-or we can use "git add <filename>" 
+2. What is a staging area?
+    -
 
 
-
-3. What does git push commands do?
-
--The git push command is used to upload local 
-repository content to a remote repository.
+3. What is the head, working tree and index?
+    -
 
 
-4. What's the difference between git fetch and git pull?
-
--The git fetch command downloads commits, files,
-and refs from a remote repository into your local repo. 
-Fetching is what you do when you want to see what everybody 
-else has been working on. 
-
-This makes fetching a safe way to review
-commits before integrating them with your local repository.
+4. What is a branch and what does it refer to?
+    -
 
 
-5. What is a git merge conflict and how does it happen? How to resolve it?
-<<<<<<< HEAD
-- trying to write random words on the same line to get merge conflict 
-when trying to merge the main with myNewBranch
-=======
-- first we need to have two branches 
-- Now we are working on 'mynewBranch' 
-- we pushed the updates to the new branch  
->>>>>>> myNewBranch
+5. What is the difference between remote and local?
+    -
 
-6. What is the head, working tree, and index?
-7. Explain these commands one by one – git status, git log, git diff, git revert <commit>, git reset <file>?
-8. What is git clone?
-9. What is git stash?
+
+6. What is the staging area?
+    -
+
+
+7. What is an untracked file?
+    -
+
+
+8. What is .gitignore file?
+    -
+
+
+9. What is a pull request?
+    -
+
+
+---------------------------------------------------------------------------
+
+Applying basic git
+
+1. What is "git init", "git commit", "Git add"?
+    -
+
+
+2. What does git push commands do?
+    -
+
+
+3. What's the difference between git fetch and git pull?
+    -
+
+
+4. What is a git merge conflict and how does it happen? How to resolve it?
+    -
+
+
+5. Explain these commands one by one – git status, git log, git diff, git revert <commit>, git reset <file>?
+    -
+
+
+6. What is git clone?
+    -
+
+
+7. What is git stash?
+    -
+
+
+8. What does git stash, git stash list, git stash clear, git stash save, git stash pop, git stash apply do?
+    -
+
+
+9. What does git stash drop do?
+    -
+
+
 10. What is git reset and mention different ways to use it and what each way does?
+    -
+
+
 11. What does the git squash do?
+    -
+
+
 12. What does git merge do in basic steps of commands?
-13. What does git annotate command do?
-14. What is a pull request?
-15. What is git cherry-pick?
+    -
+
+
+---------------------------------------------------------------------------
+
+Intermediate Git Questions:
+
+1. What does git annotate command do?
+    -
+
+
+2. What is git cherry-pick?
+    -
+
+
+3. What does git pull origin master do?
+    -
+
+
+4. How do you find a list of files that has been changed in a particular commit?
+    -
+
+
+5. What exactly is tagging in Git?
+    -
+
+
+6. Mention 3 different ways of how to revert a commit you have made? One that affects the git history and one that does not affect the git history?
+    -
+
+
+7. How to recover deleted commits, branches and stashed entries?
+    -
+
+
+8. What is the difference between centralized and decentralized repositories or git?
+    -
+
+
+9. How can you change any old commit messages?
+    -
+
+
+10. How can you add or remove or edit a file that has already been committed in an old commit? Mention a way to do it to the latest commit? and how to do it to a quite old commit?
+    -
+
+
+---------------------------------------------------------------------------
+
+
+Advanced Git Questions:
+
+1. Explain the different points when a merge can enter a conflicted stage.
+    -
+
+
+2. What has to be run to squash the last N commits into a single commit?
+    -
+
+
+3. What is the difference between fork, branch, and clone?
+    -
+
+
+4. How is Git merge different from Git rebase?
+    -
+
+
+5. How do you recover a deleted branch that was not merged?
+    -
+
+
+6. What is a detached head?
+    -
+
+
+7. How to avoid a detached head?
+    -
+
+
+8. What command helps us to know the branches merged into master and which are not?
+    -
+
+
+9. What about Git reflog?
+    -
+
+
+10. What is git bisect?
+    -
+
+
+11. How might you recover a branch that has previously pushed changes in the main repository yet has been coincidentally erased from each team member's local machines?
+    -
+
+
+12. What is git commit conventions? Make a repository with a git commit conventions and push it?
+    -
+
+
+13. What is Git flow?
+    -
+
+
+13. How can commit 2 different changes in a file to two different commits?
+    -
+
+
+---------------------------------------------------------------------------
