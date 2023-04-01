@@ -1,14 +1,45 @@
-Basic Git Questions:
-
 1. What is a git repository?
-    -
 
-2. What is a staging area?
-    -
+
+- Git is a version control system used in software development to track changes in any software files.
+
+-Repository in Git is a place where Git stores all the files. Git can store the files either
+on the local repository or on the remote repository.
+
+2. What is "git init", "git commit", "Git add"?
+
+
+- The first step is to use git init which initializes a git working directory for the project and creates the .git hidden folder.
+- The next step is to make changes or have already made changes.
+- So far the changed files are not staged (meaning they are not added to the staging area)
+    - The staging area is the area which the files are placed that are ready to be committed, meaning if you place a file here and commit these files will be written in the commit.
+- We use the git add <filename> the filename can be the relative path of the file to the working directory and we can add multiple files
+- Or we can use git add . or git add * to add all the files that are currently located in the working directory to the staging area
+- Last step is to use the git commit commmand which prompts us to create a commit with a header and a body and you can write a description for what happened in this commmit.
+    - This moves the files from the staging area to the commit we just did and if you use git status, you will find that the files that were in the staging area are now gone.
 
 
 3. What is the head, working tree and index?
-    -
+    -HEAD refers to the currently checked-out branch's latest commit.
+    for example: 
+    this is the the head of branch I am currently in ==> commit 79365d5f6283e278bc7ad5f1145a26ad2c0fe68f (HEAD -> myNewBranch, origin/myNewBranch)
+    Merge: 487f2dd a73ff79
+    Author: Yousef Zekry <***********.**@Email.com>
+    Date:   Thu Mar 30 22:13:07 2023 +0200
+
+    comment==>Merge remote-tracking branch 'origin/refactor_update_reorder_questions' into myNewBranch
+    accepted the contributer Feature
+
+    commit a73ff798922f0e9f2f0d4164212883781535e9de (origin/refactor_update_reorder_questions, refactor_update_reorder_questions)
+    Author: A-Fawzyy <*******@gmail.com>
+    Date:   Thu Mar 30 02:53:34 2023 +0200
+
+
+    -working tree It represents the current state of your project on your local machine. 
+    When you modify files in the working tree, Git tracks the changes and stages them for the next commit.
+
+    -Index temporary staging area for changes that you want to include in the next commit. 
+    When you modify a file in the working tree, Git adds the changes to the index by using the 'git add' command.
 
 
 4. What is a branch and what does it refer to?
