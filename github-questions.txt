@@ -1,3 +1,5 @@
+Basic Git Questions:
+
 1. What is a git repository?
 
 
@@ -20,6 +22,8 @@ on the local repository or on the remote repository.
 
 
 3. What is the head, working tree and index?
+
+
     -HEAD refers to the currently checked-out branch's latest commit.
     for example: 
     this is the the head of branch I am currently in ==> commit 79365d5f6283e278bc7ad5f1145a26ad2c0fe68f (HEAD -> myNewBranch, origin/myNewBranch)
@@ -54,13 +58,16 @@ on the local repository or on the remote repository.
 
 
 5. What is the difference between remote and local?
+
+
     -It mainly depends on the context so lets give few examples
     -right now i am writing in this local text file of the project whenever i save my updates using 'git commit' 
     it stores it locally in my machine but when i use 'git push' it uploads this version of the textfile to the remote repo on git
 
 
-
 6. What is the staging area?
+
+
     -Intermediate area between working repository and my next commit it goes as follows
 
     -working directory======'git add.'======>staging area==='git commit'====>repository
@@ -71,6 +78,8 @@ on the local repository or on the remote repository.
 
 
 7. What is an untracked file?
+
+
     -it means whenever you make a change in the file without using 'git add' command afterwards and then using ' git status '
     it will show you that  
     modified:   github-questions.txt
@@ -82,11 +91,21 @@ on the local repository or on the remote repository.
 
 
 8. What is .gitignore file?
-    -
+
+
+    -git ignore is a file used to write the name of the files that you want to ignore
+     The .gitignore file is a configuration file in Git that allows you to specify files that Git should ignore 
+     when tracking changes in your project.
+    - we need to ignore files that has sensitive information or OS files for Example  (api keys files/passwords/auto installed files)
 
 
 9. What is a pull request?
-    -
+
+
+    -lets say i have updated features in a new branch for this project and want to ask my supervisor 
+     if this changes are valid or not
+    -after creating this new branch i will create a pull request which allows other team members to review the changes, 
+     provide feedback, and suggest additional changes. 
 
 
 ---------------------------------------------------------------------------
