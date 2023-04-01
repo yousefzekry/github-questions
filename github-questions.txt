@@ -12,7 +12,7 @@ on the local repository or on the remote repository.
 - The first step is to use git init which initializes a git working directory for the project and creates the .git hidden folder.
 - The next step is to make changes or have already made changes.
 - So far the changed files are not staged (meaning they are not added to the staging area)
-    - The staging area is the area which the files are placed that are ready to be committed, meaning if you place a file here and commit these files will be written in the commit.
+- The staging area is the area which the files are placed that are ready to be committed, meaning if you place a file here and commit these files will be written in the commit.
 - We use the git add <filename> the filename can be the relative path of the file to the working directory and we can add multiple files
 - Or we can use git add . or git add * to add all the files that are currently located in the working directory to the staging area
 - Last step is to use the git commit commmand which prompts us to create a commit with a header and a body and you can write a description for what happened in this commmit.
@@ -54,15 +54,31 @@ on the local repository or on the remote repository.
 
 
 5. What is the difference between remote and local?
-    -
+    -It mainly depends on the context so lets give few examples
+    -right now i am writing in this local text file of the project whenever i save my updates using 'git commit' 
+    it stores it locally in my machine but when i use 'git push' it uploads this version of the textfile to the remote repo on git
+
 
 
 6. What is the staging area?
-    -
+    -Intermediate area between working repository and my next commit it goes as follows
+
+    -working directory======'git add.'======>staging area==='git commit'====>repository
+     this can benifit us by adding them localy using 'git add.' command or fo further explanation read more about gitignore to fully 
+     understand the following example  
+
+    -we can use 'git add.' command then by using gitignore we can add a specific file to gitignore and then commit changes 
 
 
 7. What is an untracked file?
-    -
+    -it means whenever you make a change in the file without using 'git add' command afterwards and then using ' git status '
+    it will show you that  
+    modified:   github-questions.txt
+
+    -so the git is actually tracking our file for changes.
+
+    -untracked file is a file that git is not aware about any changes made to this untracked file
+    -to untrack a file that is already added use 'git rm --cached <filename>' command
 
 
 8. What is .gitignore file?
