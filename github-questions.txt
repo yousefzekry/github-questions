@@ -47,12 +47,111 @@ when trying to merge the main with myNewBranch
 >>>>>>> myNewBranch
 
 6. What is the head, working tree, and index?
+
+-   HEAD refers to the currently checked-out branch's latest commit.
+    for example: 
+    this is the the head of branch I am currently in ==> commit 79365d5f6283e278bc7ad5f1145a26ad2c0fe68f (HEAD -> myNewBranch, origin/myNewBranch)
+    Merge: 487f2dd a73ff79
+    Author: Yousef Zekry <***********.**@Email.com>
+    Date:   Thu Mar 30 22:13:07 2023 +0200
+
+    comment==>Merge remote-tracking branch 'origin/refactor_update_reorder_questions' into myNewBranch
+    accepted the contributer Feature
+
+    commit a73ff798922f0e9f2f0d4164212883781535e9de (origin/refactor_update_reorder_questions, refactor_update_reorder_questions)
+    Author: A-Fawzyy <*******@gmail.com>
+    Date:   Thu Mar 30 02:53:34 2023 +0200
+
+
+    -working tree It represents the current state of your project on your local machine. 
+    When you modify files in the working tree, Git tracks the changes and stages them for the next commit.
+
+    -Index temporary staging area for changes that you want to include in the next commit. 
+    When you modify a file in the working tree, Git adds the changes to the index by using the 'git add' command.
+
+
 7. Explain these commands one by one – git status, git log, git diff, git revert <commit>, git reset <file>?
+
+    -'git status' shows the status of each file changes
+    -'git log' shows repository history
+    -'git diff'Show changes between the working tree and the index or a tree, changes between the index and a tree, 
+      changes between two trees, changes resulting from a merge, or changes between two files on disk.
+
+
 8. What is git clone?
+
+
+-git clone simply downloads the git repository to your local machine
+
+
 9. What is git stash?
+
+-'git stash' is used for drafting our work without commiting it 
+-for example we want to work on two different features in our project, starting by working on feature one before we finish it 
+ we wanted to work on {feature 2} first because it needs to be submitted as soon as possible at the same time we don't want to
+ lose the progress we made in {feature 1} then its time for 'git stash' it will draft the progress without commiting it 
+ -let's apply same scenario if we added {feature 3} after we made progress to {feature 2} then we will use git stash again
+ -whenever we want to revert back to any stash we will use command 'git stash list' then choose the number of want
+ -if we want to use the first stash we will use 'git stash apply'    
+
+
+
 10. What is git reset and mention different ways to use it and what each way does?
+
+
+-it resets the state of our working tree and staging area to latest commit
+
+ types of 'git reset'
+    'git reset --hard' <commit> : resets the HEAD pointer to a previous commit and updates the staging area and 
+                                  working tree to match the state of the commit. 
+                                  This effectively discards all changes made since the commit
+
+    'git reset --soft' <commit> :  resets the HEAD pointer to a previous commit, 
+                                   but leaves the changes in the working tree and staging area intact. 
+                                   This is useful if you want to "undo" a commit and make further changes before committing again.
+
+    git reset --mixed <commit>: This command resets the HEAD pointer to a 
+                                previous commit and updates 
+                                the staging area to match the state of the commit, 
+                                but leaves the changes in the working tree intact. 
+                                This is useful if you want to unstage changes that you previously staged.
+
 11. What does the git squash do?
+
+
+-is a feature in Git that allows you to combine multiple commits into a single, cleaner commit. 
+ This is useful for creating a more organized commit history and making it easier to understand 
+ the changes that were made to a codebase.
+
+
 12. What does git merge do in basic steps of commands?
+
+
+-'git checkout' will show us which which branch are we working on 
+-'git branch -a' will list for us the branches we have for this git repo
+-'git checkout <branchname>' we will use this command only to move to another branch if we want to make the merge 
+-on another we have to move to it first 
+-'git merge <branchname>' to merge the wanted branch with the branch that we are on  
+
 13. What does git annotate command do?
+
+
+-'git annotate <filename>' that allows you to see who made changes to a file and when those changes were made. 
+It displays the revision and author information for each line in a file, 
+allowing you to track the evolution of the file over time and see who made each change.
+
+
 14. What is a pull request?
+
+
+-lets say i have updated features in a new branch for this project and want to ask my supervisor 
+-if this changes are valid or not
+-after creating this new branch i will create a pull request which allows other team members to review the changes, 
+-provide feedback, and suggest additional changes. 
+
+
 15. What is git cherry-pick?
+
+-is a Git command that allows you to apply a specific commit from one branch to another branch. 
+-It is commonly used when you want to apply a specific change from one branch to another, 
+-without merging the entire branch.
