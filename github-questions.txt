@@ -43,7 +43,14 @@ on the local repository or on the remote repository.
 
 
 4. What is a branch and what does it refer to?
-    -
+    
+    
+    -its a moveable nodes, eachone have the version of the project in each commit whenever you create a new branch 
+     it creates the same node in a different location for example adding a new feature and trying it before 
+     merging to the production code in the main branch or developing different features by different programmers at the same time 
+     so each can create his own branch and work on a different branch to develop and test the feature 
+     then they can merge in a different branch for example called "Test all features" to test 
+     all features working together before merging them to production   
 
 
 5. What is the difference between remote and local?
