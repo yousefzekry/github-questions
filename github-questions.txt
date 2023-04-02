@@ -37,16 +37,17 @@ commits before integrating them with your local repository.
 
 
 5. What is a git merge conflict and how does it happen? How to resolve it?
-<<<<<<< HEAD
-- trying to write random words on the same line to get merge conflict 
-when trying to merge the main with myNewBranch
-=======
-- first we need to have two branches 
-- Now we are working on 'mynewBranch' 
-- we pushed the updates to the new branch  
->>>>>>> myNewBranch
+
+-   when changes are written in the same line in two different branches we are trying to merge.
+-   merge conflict happens because the git doesn't know which one of them we want to chose.
+
+-   1-use 'git merge --abort' to cancel the merge.
+-   2-use 'git diff' helps to identify the differences between the states repositories or files.
+-   3-use 'git reset' The git reset command is used at the time of merge conflict to reset the conflicted files to their original state.
+
 
 6. What is the head, working tree, and index?
+
 
 -   HEAD refers to the currently checked-out branch's latest commit.
     for example: 
@@ -73,7 +74,10 @@ when trying to merge the main with myNewBranch
 7. Explain these commands one by one – git status, git log, git diff, git revert <commit>, git reset <file>?
 
     -'git status' shows the status of each file changes
-    -'git log' shows repository history
+    -'git log' shows repository history, It's what you use when you need to find a specific version of 
+      a project or figure out what changes 
+      will be introduced by merging in a feature branch
+
     -'git diff'Show changes between the working tree and the index or a tree, changes between the index and a tree, 
       changes between two trees, changes resulting from a merge, or changes between two files on disk.
 
